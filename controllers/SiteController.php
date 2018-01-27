@@ -108,7 +108,6 @@ class SiteController extends Controller
         
         $diameter = $this->getAllprod("diameter");
         
-        var_dump($_GET);
         return $this->render('index', 
         array(
               'diameter'=>$diameter, 
@@ -136,12 +135,9 @@ class SiteController extends Controller
     }
     
     
-    
-    
     public function actionFind()
     {
         $post = Yii::$app->request->get();
-        var_dump($post);
         if( $post['first'] != "Любой" )
         {
             $search = $search . $post['first'];
@@ -152,12 +148,6 @@ class SiteController extends Controller
     public function actionFindshinu()
     {
         $get = Yii::$app->request->get();
-        
-        //дерзнем
-        /*$get['diam'] = "R13";
-        $get['width'] = "155";
-        $get['height'] = "70";
-        $get['proizv'] = "Росава";*/
        
         $diam = $get['diam'];
         $width = $get['width'];
@@ -213,7 +203,6 @@ class SiteController extends Controller
         //берем все потому что в бд нету товаров с такими же опциями которые указанны на гл. стр. 
         $posts = Yii::$app->db->createCommand("SELECT * FROM products_shinu")
             ->queryAll();
-        //var_dump($posts);
         
         return $this->render('find', array('products'=>$posts));
     }
