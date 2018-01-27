@@ -1,22 +1,4 @@
-<?php/*
- // $session = new CHttpSession;
- //  $session->open();
-// Yii::app()->session;
 
- // echo "<h1>ggg</h1>";
-// var_dump( $session['mass'] );
-// var_dump($session);
-
-if( !empty( $ses_mass) ){
-    $ses_mass = Yii::app()->session['mass'];
-}else{
-    $ses_mass = 1;
-}
-
-// echo "<h1>ggg</h1>";
-// var_dump( $ses_mass);
-// echo "<h1>ggg</h1>";
- */?>
 
 <!DOCTYPE html>
 <html lang="ru">
