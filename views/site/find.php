@@ -10,8 +10,8 @@ use yii\helpers\Html;
         <div>
             <div class="col-xs-12 col-sm-9 equalHeight border-left" style="height: 194px;">
                 <h3>
-                   <img class="season" src="<?=$my_item['http://vashashina.dp.ua/images/tire_icon.jpg']?>" alt="">                               
-                   <?= Html::a($my_item['name'], [$my_item["url"]], ['data-pjax' => '0']) ?>
+                   <?= Html::img($my_item['http://vashashina.dp.ua/images/tire_icon.jpg'], ['class' => 'season']) ?>
+                   <?= Html::a($my_item['name'], $my_item["url"], ['data-pjax' => '0']) ?>
                 </h3>
                 <div class="row">
                    <div class="col-xs-7">

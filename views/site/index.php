@@ -28,7 +28,7 @@ $this->title = 'My Yii Application';
                      <?= Html::input('hidden', 'Tire[car_type]', 'all', ['id'=>'carTypeInput']) ?>
                      <div class="select-img row">
                         <div class="col-sm-6 col-md-4 to-center">
-                           <img class="img-responsive" src="http://vashashina.dp.ua/images/radius_icon.png" alt="">                 
+                           <?= Html::img($my_item['http://vashashina.dp.ua/images/radius_icon.png'], ['class' => 'img-responsive']) ?>
                            <?= Html::label('Диаметер') ?>
                            <div class="dropdown">
                                <select name="diam">
@@ -42,7 +42,7 @@ $this->title = 'My Yii Application';
                            </div>
                         </div>
                         <div class="col-sm-6 col-md-4">
-                           <img class="img-responsive" src="http://vashashina.dp.ua/images/width_icon.png" alt="">              
+                           <?= Html::img($my_item['http://vashashina.dp.ua/images/width_icon.png'], ['class' => 'img-responsive', 'alt'=>'']) ?>
                            <?= Html::label('Ширина') ?>
                            <div class="dropdown">
                                <select name="width">
@@ -57,7 +57,7 @@ $this->title = 'My Yii Application';
                            </div>
                         </div>
                         <div class="col-sm-6 col-md-4 to-center">
-                           <img class="img-responsive" src="http://vashashina.dp.ua/images/height_icon.png" alt="">                
+                           <?= Html::img($my_item['http://vashashina.dp.ua/images/height_icon.png'], ['class' => 'img-responsive', 'alt'=>'']) ?>
                            <?= Html::label('Высота') ?>
                            <div class="dropdown">
                                
@@ -73,12 +73,12 @@ $this->title = 'My Yii Application';
                      </div>
                      <div class="other-option row">
                         <div class="col-sm-6">
-                           <?= Html::label('Сезон') ?><br>
-                           <a id="summerA" class="seasonIcon" href="javascript:void(0)"></a>                
-                           <a id="winterA" class="seasonIcon" href="javascript:void(0)"></a>                
-                           <a id="allSeasonA" class="seasonIcon" href="javascript:void(0)"></a>              
-                           <?= Html::input('hidden', 'Tire[season]', '', ['id'=>'seasonInput']) ?>
-                           
+                           <?= Html::label('Сезон');
+                           echo "<br>";
+                           echo Html::a('', 'javascript:void(0)', ['id'=>'summerA', 'class'=>'seasonIcon']); 
+                           echo Html::a('', 'javascript:void(0)', ['id'=>'winterA', 'class'=>'seasonIcon']); 
+                           echo Html::a('', 'javascript:void(0)', ['id'=>'allSeasonA', 'class'=>'seasonIcon']);         
+                           echo Html::input('hidden', 'Tire[season]', '', ['id'=>'seasonInput']) ?>  
                         </div>
                         <div class="col-sm-6">
                            <?= Html::label('Производитель') ?>
@@ -156,7 +156,7 @@ $this->title = 'My Yii Application';
                      </ul>
                      <div class="select-img row">
                         <div class="col-sm-6 col-md-6 to-center">
-                           <img class="img-responsive" src="http://vashashina.dp.ua/images/radius_icon.png" alt="">                
+                           <?= Html::img('http://vashashina.dp.ua/images/radius_icon.png', ['class' => 'img-responsive', 'alt'=>'']) ?>
                            <?= Html::label('Диаметр') ?>
                            <div class="dropdown">
                                
@@ -176,7 +176,7 @@ $this->title = 'My Yii Application';
                            </div>
                         </div>
                         <div class="col-sm-6 col-md-6">
-                           <img class="img-responsive" src="http://vashashina.dp.ua/images/width_icon.png" alt="">           
+                           <?= Html::img('http://vashashina.dp.ua/images/width_icon.png', ['class' => 'img-responsive', 'alt'=>'']) ?>
                            <?= Html::label('Ширина') ?>
                            <div class="dropdown">
                                
@@ -343,7 +343,7 @@ $this->title = 'My Yii Application';
                         становиться красивее с меньшим вылетом, но как правило к хорошему это никогда не приводит.
                      </p>
                      <div class="etImage">
-                        <img src="http://vashashina.dp.ua/assets/e5dbbcf8/images/et.jpg" alt="">
+                        <?= Html::img('http://vashashina.dp.ua/assets/e5dbbcf8/images/et.jpg', ['alt'=>'']) ?>
                      </div>
                   </div>
                </div>
