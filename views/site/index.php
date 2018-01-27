@@ -16,7 +16,7 @@ $this->title = 'My Yii Application';
                <h2>шины</h2>
                <div class="col-sm-12">
                     <?= Html::beginForm([''], 'get', ['enctype' => 'multipart/form-data', 'id' => 'tire-find-form', 'class'=>'form-horizontal']);
-                      echo Html::input('hidden', 'r', 'site/findshinu'); ?>
+                    echo Html::input('hidden', 'r', 'site/findshinu'); ?>
                      <ul class="select-type" id="carType">
                         <li><a class="active">Все</a></li>
                         <li><a>Легковые</a></li>
@@ -166,10 +166,7 @@ $this->title = 'My Yii Application';
                                      <option value="<?=$d_diameter_for['name'] ;?>"><?=$d_diameter_for['name'] ;?></option>
                                     <?php endforeach; ?>
                                </select>
-                               
-                              <span class="old">
-
-                              </span>
+                                                         
                               <span class="selected">Любой</span><span class="carat"></span>
                               <div>
                               </div>
@@ -187,13 +184,7 @@ $this->title = 'My Yii Application';
                                     <?php endforeach; ?>
                                </select>
                                
-                              <span class="old">
-
-                              </span>
                               <span class="selected">Любая</span><span class="carat"></span>
-                              <div>
-
-                              </div>
                            </div>
                         </div>
                         <div class="hiddenSelect"></div>
@@ -211,9 +202,6 @@ $this->title = 'My Yii Application';
                                     <?php endforeach; ?>
                                </select>
                                
-                              <span class="old">
-
-                              </span>
                               <span class="selected">Любой</span><span class="carat"></span>
                               <div>
 
@@ -232,13 +220,7 @@ $this->title = 'My Yii Application';
                                     <?php endforeach; ?>
                                </select>
                                
-                              <span class="old">
-
-                              </span>
                               <span class="selected">Любой</span><span class="carat"></span>
-                              <div>
-
-                              </div>
                            </div>
                         </div>
                         <div class="col-sm-6 col-md-4 to-center">
@@ -252,13 +234,8 @@ $this->title = 'My Yii Application';
                                     <?php endforeach; ?>
                                </select>
                                
-                              <span class="old">
-                                 
-                              </span>
                               <span class="selected">Любой</span><span class="carat"></span>
-                              <div>
-                                 
-                              </div>
+
                            </div>
                         </div>
                      </div>
