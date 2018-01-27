@@ -28,8 +28,8 @@ $this->title = 'My Yii Application';
                      <?= Html::input('hidden', 'Tire[car_type]', 'all', ['id'=>'carTypeInput']) ?>
                      <div class="select-img row">
                         <div class="col-sm-6 col-md-4 to-center">
-                           <?= Html::img($my_item['http://vashashina.dp.ua/images/radius_icon.png'], ['class' => 'img-responsive']) ?>
-                           <?= Html::label('Диаметер') ?>
+                           <?= Html::img($my_item['http://vashashina.dp.ua/images/radius_icon.png'], ['class' => 'img-responsive']);
+                           echo Html::label('Диаметер') ?>
                            <div class="dropdown">
                                <select name="diam">
                                    <option value="0">Любой</option>
@@ -42,8 +42,8 @@ $this->title = 'My Yii Application';
                            </div>
                         </div>
                         <div class="col-sm-6 col-md-4">
-                           <?= Html::img($my_item['http://vashashina.dp.ua/images/width_icon.png'], ['class' => 'img-responsive', 'alt'=>'']) ?>
-                           <?= Html::label('Ширина') ?>
+                           <?= Html::img($my_item['http://vashashina.dp.ua/images/width_icon.png'], ['class' => 'img-responsive', 'alt'=>'']);
+                           echo Html::label('Ширина') ?>
                            <div class="dropdown">
                                <select name="width">
                                    <option value="">Любой</option>
@@ -57,8 +57,8 @@ $this->title = 'My Yii Application';
                            </div>
                         </div>
                         <div class="col-sm-6 col-md-4 to-center">
-                           <?= Html::img($my_item['http://vashashina.dp.ua/images/height_icon.png'], ['class' => 'img-responsive', 'alt'=>'']) ?>
-                           <?= Html::label('Высота') ?>
+                           <?= Html::img($my_item['http://vashashina.dp.ua/images/height_icon.png'], ['class' => 'img-responsive', 'alt'=>'']);
+                           echo Html::label('Высота') ?>
                            <div class="dropdown">
                                
                                <select name="height">
@@ -156,8 +156,8 @@ $this->title = 'My Yii Application';
                      </ul>
                      <div class="select-img row">
                         <div class="col-sm-6 col-md-6 to-center">
-                           <?= Html::img('http://vashashina.dp.ua/images/radius_icon.png', ['class' => 'img-responsive', 'alt'=>'']) ?>
-                           <?= Html::label('Диаметр') ?>
+                           <?= Html::img('http://vashashina.dp.ua/images/radius_icon.png', ['class' => 'img-responsive', 'alt'=>'']);
+                           echo Html::label('Диаметр') ?>
                            <div class="dropdown">
                                
                                <select name="d_diam">
@@ -176,8 +176,8 @@ $this->title = 'My Yii Application';
                            </div>
                         </div>
                         <div class="col-sm-6 col-md-6">
-                           <?= Html::img('http://vashashina.dp.ua/images/width_icon.png', ['class' => 'img-responsive', 'alt'=>'']) ?>
-                           <?= Html::label('Ширина') ?>
+                           <?= Html::img('http://vashashina.dp.ua/images/width_icon.png', ['class' => 'img-responsive', 'alt'=>'']);
+                           echo Html::label('Ширина') ?>
                            <div class="dropdown">
                                
                                <select name="d_width">
