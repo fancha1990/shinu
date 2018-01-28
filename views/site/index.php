@@ -397,7 +397,7 @@ $this->title = 'My Yii Application';
             <h3 class="text-left margin-30">Я знаю только марку своего авто</h3>
             <div class="row">
                     <?= Html::beginForm([''], 'get', ['enctype' => 'multipart/form-data', 'id' => 'car-find-form', 'class'=>'form-horizontal']);
-                      echo Html::input('hidden', 'r', 'site//site/podbor-po-avto'); ?>
+                    echo Html::input('hidden', 'r', 'site//site/podbor-po-avto'); ?>
                   <div class="col-sm-2">
                      <?= Html::label('Марка') ?>
                      <div class="dropdown">
@@ -468,7 +468,7 @@ $this->title = 'My Yii Application';
                      <!--<button class="margin-30 send-calc" id="carFindButton">Подобрать</button>-->
                      <?= Html::button('Подобрать', ['class' => 'margin-30 send-calc','id'=>'carFindButton']) ?>
                   </div>
-                    <?= Html::endForm() ?>
+                <?= Html::endForm() ?>
             </div>
          </div>
       </div>
